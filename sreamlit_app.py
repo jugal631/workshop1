@@ -5,7 +5,7 @@ from google import genai
 st.title("AI-Powered Career Path Generator")
 
 # User Input
-name = st.text_input("Enter your name:")
+name = st.text_input("AIzaSyCMh-Prm4c5LS-VGBibhuO4VEzxWMpgMtg")
 years_experience = st.number_input("Enter your years of experience:", min_value=0, step=1)
 
 # Generate Career Path
