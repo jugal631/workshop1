@@ -1,11 +1,17 @@
+
 import streamlit as st
+import subprocess
+
+# Install required package
+subprocess.run(["pip", "install", "-q", "-U", "google-genai"], check=True)
+
 from google import genai
 
 # Streamlit UI
 st.title("AI-Powered Career Path Generator")
 
 # User Input
-name = st.text_input("AIzaSyCMh-Prm4c5LS-VGBibhuO4VEzxWMpgMtg")
+name = st.text_input("Enter your name:")
 years_experience = st.number_input("Enter your years of experience:", min_value=0, step=1)
 
 # Generate Career Path
